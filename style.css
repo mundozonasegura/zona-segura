@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  overflow-x: hidden;
+}
+header { background: #ffcc00; padding: 20px; }
+.portada { width: 200px; border-radius: 10px; }
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carta {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.carta img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
